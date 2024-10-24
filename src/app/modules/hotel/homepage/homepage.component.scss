@@ -1,0 +1,17 @@
+@import "../../../shared/theme/common.scss";
+
+#main {
+  background: $background-color;
+  min-height: 100vh;
+  padding: 70px 12px;
+  color: white; // todo: check about moving this
+  font-family: "Poppins", sans-serif; // todo: check about moving this
+}
+
+h1 {
+  font-weight: 500;
+}
+
+.searchBoxWrapper {
+  margin-top: 24px;
+}
