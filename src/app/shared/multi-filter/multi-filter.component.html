@@ -1,10 +1,9 @@
 <div id="main">
   <div class="searchWrapper">
     <div class="topRow">
-      <div [ngTemplateOutlet]="searchIcon"></div>
-      <div class="inputWrapper">
-        <input type="text" class="input" placeholder="find your desired stay" />
-      </div>
+      <app-icon-input>
+        <div [ngTemplateOutlet]="searchIcon"></div
+      ></app-icon-input>
     </div>
     <div class="bottomRow"></div>
   </div>
