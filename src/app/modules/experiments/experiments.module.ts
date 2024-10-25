@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { ExperimentsRoutingModule } from './experiments-routing.module';
 import { CubeComponent } from './cube/cube.component';
+import { ExperimentsHomeComponent } from './experiments-home/experiments-home.component';
 
 
 @NgModule({
   declarations: [
-    CubeComponent
+    CubeComponent,
+    ExperimentsHomeComponent
   ],
   imports: [
     CommonModule,

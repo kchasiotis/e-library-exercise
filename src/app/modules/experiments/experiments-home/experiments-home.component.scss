@@ -1,0 +1,35 @@
+.circle {
+  width: 100px; /* Set the width of the circle */
+  height: 100px; /* Set the height of the circle */
+  background-color: blue; /* Set a background color */
+  border-radius: 50%; /* This makes it a circle */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Initial shadow */
+}
+
+.circle:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5); /* Elevated shadow on hover */
+  transform: translateY(-2px); /* Slight upward movement */
+}
+
+.circle-small {
+  width: 80px; /* Set the width of the circle */
+  height: 80px; /* Set the height of the circle */
+  background-color: white; /* Set a background color */
+  border-radius: 50%; /* This makes it a circle */
+}
+
+.center {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.circleWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 12px 24px;
+}
