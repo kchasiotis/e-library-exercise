@@ -1,9 +1,23 @@
 .container {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 24px;
+  box-sizing: border-box;
 }
 
-.div {
-  box-sizing: border-box;
+a {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  color: black;
+  text-decoration: none !important;
+  background: none;
+  font-weight: normal;
+}
+
+a p {
+  color: black;
 }
 
 .circle {
@@ -39,11 +53,10 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 12px 24px;
 }
 
 .smile-container {
-  padding: 30px 35px;
+  padding: 30px 42px;
   height: 100%;
 }
 
