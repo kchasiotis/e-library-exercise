@@ -1,11 +1,15 @@
 @import "../../../shared/theme/common.scss";
 
-#main {
+.container {
   background: $background-color;
   min-height: 100vh;
-  padding: 70px 30px;
+  padding: 70px 0px 0px 0px;
   color: white; // todo: check about moving this
   font-family: "Poppins", sans-serif; // todo: check about moving this
+}
+
+.horizontal-padding {
+  padding: 0px 30px;
 }
 
 h1 {
