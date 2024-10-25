@@ -3,7 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { CubeComponent } from './cube/cube.component';
 import { ExperimentsHomeComponent } from './experiments-home/experiments-home.component';
 
-const routes: Routes = [{ path: '', component: ExperimentsHomeComponent }];
+const routes: Routes = [
+  { path: '', component: ExperimentsHomeComponent },
+  { path: 'cube', component: CubeComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
