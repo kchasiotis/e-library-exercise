@@ -1,5 +1,9 @@
 .container {
-  min-height: 100vh;
+  height: 100vh;
+}
+
+.div {
+  box-sizing: border-box;
 }
 
 .circle {
@@ -40,16 +44,15 @@
 
 .smile-container {
   padding: 30px 35px;
-  height: 200px;
-  display: flex;
+  height: 100%;
 }
 
 .smile {
   background-color: orange;
-  height: 200px;
+  height: 100%;
 }
 
-.oversmile {
+.over-smile {
   background-color: white;
   height: 100%;
 }
@@ -61,4 +64,6 @@
 
 .oversmile-container {
   padding: 0px 16px 16px 16px;
+  height: 100%;
+  box-sizing: border-box;
 }
