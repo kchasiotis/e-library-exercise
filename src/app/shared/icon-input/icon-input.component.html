@@ -1,6 +1,7 @@
-<div class="topRow">
-  <ng-content></ng-content>
+<div class="container">
+  <ng-content select="[icon]"></ng-content>
   <div class="inputWrapper">
-    <input type="text" class="input" [placeholder]="placeholder" />
+    <ng-content select="[input]"></ng-content>
+    <ng-content select="[text]"></ng-content>
   </div>
 </div>

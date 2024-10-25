@@ -1,21 +1,38 @@
 <div id="main">
   <div class="searchWrapper">
     <div class="topRow">
-      <app-icon-input placeholder="find your desired stay">
-        <app-icon iconName="search"></app-icon>
+      <app-icon-input>
+        <app-icon icon select="[icon]" iconName="search"></app-icon>
+        <input
+          input
+          type="text"
+          class="input"
+          [placeholder]="'find your desired stay'"
+        />
       </app-icon-input>
     </div>
     <div class="bottomRow">
-      <app-icon-input placeholder="from">
-        <app-icon iconName="date"></app-icon>
-      </app-icon-input>
+      <app-icon-input>
+        <app-icon icon iconName="date"></app-icon>
 
-      <app-icon-input placeholder="to">
-        <app-icon iconName="date"></app-icon>
+        <p text>from</p>
       </app-icon-input>
+      <div class="vertical-line"></div>
 
-      <app-icon-input placeholder="count">
-        <app-icon iconName="add_person"></app-icon>
+      <div class="justify-center">
+        <app-icon-input>
+          <app-icon icon iconName="date"></app-icon>
+
+          <p text>to</p>
+        </app-icon-input>
+      </div>
+
+      <div class="vertical-line"></div>
+
+      <app-icon-input>
+        <app-icon icon iconName="add_person"></app-icon>
+
+        <p text>count</p>
       </app-icon-input>
     </div>
   </div>
