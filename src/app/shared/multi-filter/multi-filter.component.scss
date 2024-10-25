@@ -1,12 +1,13 @@
 $background-color: #16202f;
 $color: #39414e;
 
-#main {
+.container {
   background-color: $background-color;
   border-radius: 12px;
   border-color: rgb(256, 256, 256, 0.1);
   border-width: 1px;
   border-style: solid;
+  padding: 0px 24px;
 }
 
 .topRow {
@@ -33,10 +34,6 @@ $color: #39414e;
   border-color: $color;
   border-style: solid;
   height: 24px;
-}
-
-.searchWrapper {
-  margin: 0px 24px;
 }
 
 .justify-center {

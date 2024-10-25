@@ -1,39 +1,70 @@
-<div id="main">
-  <div class="searchWrapper">
-    <div class="topRow">
+<!-- Container for the entire search component -->
+<div class="container">
+  
+  <!-- Top row containing the main search input field -->
+  <div class="topRow">
+
+    <!-- Custom component for an input with an icon -->
+    <app-icon-input>
+      
+      <!-- Icon component displaying a search icon -->
+      <app-icon icon select="[icon]" iconName="search"></app-icon>
+      
+      <!-- Text input for the search query, with a placeholder text -->
+      <input
+        input
+        type="text"
+        class="input"
+        [placeholder]="'find your desired stay'"
+      />
+      
+    </app-icon-input>
+  </div>
+
+  <!-- Bottom row containing additional filter options for date range and count -->
+  <div class="bottomRow">
+    
+    <!-- First filter option component for the "from" date -->
+    <app-icon-input>
+      
+      <!-- Icon component displaying a calendar icon for the "from" date -->
+      <app-icon icon iconName="date"></app-icon>
+      
+      <!-- Text label for the "from" date filter -->
+      <p text>from</p>
+      
+    </app-icon-input>
+
+    <!-- Divider line between the "from" and "to" date filters -->
+    <div class="vertical-line"></div>
+    
+    <!-- Centered component for the "to" date -->
+    <div class="justify-center">
+      
+      <!-- Filter option component for the "to" date -->
       <app-icon-input>
-        <app-icon icon select="[icon]" iconName="search"></app-icon>
-        <input
-          input
-          type="text"
-          class="input"
-          [placeholder]="'find your desired stay'"
-        />
-      </app-icon-input>
-    </div>
-    <div class="bottomRow">
-      <app-icon-input>
+        
+        <!-- Icon component displaying a calendar icon for the "to" date -->
         <app-icon icon iconName="date"></app-icon>
-
-        <p text>from</p>
-      </app-icon-input>
-      <div class="vertical-line"></div>
-
-      <div class="justify-center">
-        <app-icon-input>
-          <app-icon icon iconName="date"></app-icon>
-
-          <p text>to</p>
-        </app-icon-input>
-      </div>
-
-      <div class="vertical-line"></div>
-
-      <app-icon-input>
-        <app-icon icon iconName="add_person"></app-icon>
-
-        <p text>count</p>
+        
+        <!-- Text label for the "to" date filter -->
+        <p text>to</p>
+        
       </app-icon-input>
     </div>
+
+    <!-- Divider line between the "to" date and "count" filter -->
+    <div class="vertical-line"></div>
+    
+    <!-- Last filter option component for "count" (number of people or rooms) -->
+    <app-icon-input>
+      
+      <!-- Icon component displaying an "add person" icon for the count filter -->
+      <app-icon icon iconName="add_person"></app-icon>
+      
+      <!-- Text label for the "count" filter -->
+      <p text>count</p>
+      
+    </app-icon-input>
   </div>
 </div>
