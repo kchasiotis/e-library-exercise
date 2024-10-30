@@ -45,8 +45,13 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: $secondary-text-color;
 }
 
 .descriptionContainer {
   height: 2rem;
+}
+
+.priceContainer {
+  padding-top: 16px;
 }

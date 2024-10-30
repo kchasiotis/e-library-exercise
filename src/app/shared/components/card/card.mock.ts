@@ -1,7 +1,7 @@
 export const cardList = [
   {
     imageUri: 'assets/hotel1.jpg',
-    title: 'Cozy Mountain Retreat',
+    title: 'Cozy Retreat',
     description:
       'A serene retreat in the mountains with beautiful views and cozy amenities.',
     price: 120,
@@ -9,7 +9,7 @@ export const cardList = [
   },
   {
     imageUri: 'assets/hotel2.jpg',
-    title: 'Urban Luxury Hotel',
+    title: 'Luxury Hotel',
     description:
       'Experience the best in city luxury with top-class facilities and modern design.',
     price: 200,
