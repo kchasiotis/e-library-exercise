@@ -1,5 +1,7 @@
 <div class="row">
-  <div *ngFor="let text of textArray" style="padding-right: 15px">
-    <p class="carousel-text">{{ text }}</p>
+  <div *ngFor="let text of textArray; index as i" style="padding-right: 15px">
+    <p (click)="textClickedHandler(i)" [class.carouselText]="i === activeIndex">
+      {{ text }}
+    </p>
   </div>
 </div>

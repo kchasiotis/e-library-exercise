@@ -5,4 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './homepage.component.html',
   styleUrls: ['./homepage.component.scss'],
 })
-export class HomepageComponent {}
+export class HomepageComponent {
+  categories: string[] = ['Luxe', 'Countryside', 'Islands', 'Private rooms'];
+
+  textClickedHandler(text: string) {
+    console.log(text);
+  }
+}

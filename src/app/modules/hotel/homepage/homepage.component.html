@@ -7,7 +7,10 @@
       <app-multi-filter></app-multi-filter>
     </div>
   </div>
-  <div>
-    <app-text-carousel></app-text-carousel>
+  <div class="carousel-padding">
+    <app-text-carousel
+      [textArray]="categories"
+      (textClicked)="textClickedHandler($event)"
+    ></app-text-carousel>
   </div>
 </div>
