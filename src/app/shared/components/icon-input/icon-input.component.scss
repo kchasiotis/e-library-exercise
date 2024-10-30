@@ -10,18 +10,13 @@ $color: #39414e;
   margin-left: 10px;
 }
 
-::ng-deep .input::placeholder,
-::ng-deep p {
+::ng-deep #iconInputContainer .input::placeholder,
+::ng-deep #iconInputContainer p {
   color: rgba(256, 256, 256, 0.2);
-  // color: $color;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2); /* Black stroke of 2px */
 }
 
-::ng-deep p {
-  margin: 0px;
-}
-
-::ng-deep .input {
+::ng-deep #iconInputContainer .input {
   box-sizing: border-box;
   width: 100%;
   border: none; /* Remove borders */

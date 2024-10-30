@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class CardComponent {
   cardList = [
-    { imageUri: '', title: '', subtitle: '', price: 40, stars: '' },
-    { imageUri: '', title: '', subtitle: '', price: 40, stars: '' },
-    { imageUri: '', title: '', subtitle: '', price: 40, stars: '' },
+    { imageUri: '', title: '', description: '', price: 40, stars: '' },
+    { imageUri: '', title: '', description: '', price: 40, stars: '' },
+    { imageUri: '', title: '', description: '', price: 40, stars: '' },
   ];
 
   // JavaScript to generate a random color and update the CSS variable

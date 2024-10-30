@@ -5,6 +5,10 @@
   text-underline-offset: 3px; /* Adjusts the underline's vertical position */
 }
 
+p {
+  color: rgba(256, 256, 256, 0.2);
+}
+
 .row {
   display: flex;
   flex-direction: row;
