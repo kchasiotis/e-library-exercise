@@ -8,4 +8,11 @@
 .row {
   display: flex;
   flex-direction: row;
+  overflow-x: auto;
+  text-wrap: nowrap;
+  scrollbar-width: 0px;
+}
+
+.row::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
 }

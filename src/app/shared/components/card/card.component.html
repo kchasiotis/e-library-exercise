@@ -1,1 +1,7 @@
-<p>card works!</p>
+<div class="container">
+  <div
+    *ngFor="let item of cardList"
+    class="item"
+    [ngStyle]="{ backgroundColor: getRandomColor() }"
+  ></div>
+</div>

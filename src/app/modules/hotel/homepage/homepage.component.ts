@@ -6,7 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./homepage.component.scss'],
 })
 export class HomepageComponent {
-  categories: string[] = ['Luxe', 'Countryside', 'Islands', 'Private rooms'];
+  categories: string[] = [
+    'Luxe',
+    'Countryside',
+    'Islands',
+    'Private rooms',
+    'Savana',
+  ];
 
   textClickedHandler(text: string) {
     console.log(text);
