@@ -19,6 +19,21 @@
   width: 100%; /* Set width as needed */
 }
 
+.image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
 .cardInfo {
   padding: 10px 12px 10px 12px;
+  text-wrap: wrap;
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

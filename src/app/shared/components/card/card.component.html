@@ -4,7 +4,9 @@
     class="item"
     [ngStyle]="{ backgroundColor: getRandomColor() }"
   >
-    <div class="image"></div>
+    <div class="image">
+      <img [src]="item.imageUri" alt="" />
+    </div>
     <div class="cardInfo">
       <p class="title">{{ item.title }}</p>
       <p class="description">{{ item.description }}</p>

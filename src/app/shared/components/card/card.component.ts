@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { cardList } from './card.mock';
 
 @Component({
   selector: 'app-card',
@@ -6,11 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent {
-  cardList = [
-    { imageUri: '', title: '', description: '', price: 40, stars: '' },
-    { imageUri: '', title: '', description: '', price: 40, stars: '' },
-    { imageUri: '', title: '', description: '', price: 40, stars: '' },
-  ];
+  cardList = cardList;
 
   // JavaScript to generate a random color and update the CSS variable
   getRandomColor() {
