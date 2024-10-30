@@ -1,3 +1,5 @@
+@import "../../theme/common.scss";
+
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
@@ -5,17 +7,24 @@
 }
 
 .item {
-  border-radius: 16%;
+  border-radius: 6%;
   width: 100%;
-  background-color: #4caf50;
   display: flex;
   flex-direction: column;
   overflow: hidden; /* Clips child elements to fit rounded corners */
 }
 
+.title {
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Limit to 1 lines */
+  -webkit-box-orient: vertical;
+  line-clamp: 1; /* Standard property for compatibility */
+  overflow: hidden;
+}
+
 .image {
   aspect-ratio: 160/150;
-  background-color: #4caf50;
   width: 100%; /* Set width as needed */
 }
 
@@ -27,7 +36,7 @@
 
 .cardInfo {
   padding: 10px 12px 10px 12px;
-  text-wrap: wrap;
+  background-color: $secondary-background-color;
 }
 
 .description {
@@ -36,4 +45,8 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.descriptionContainer {
+  height: 2rem;
 }

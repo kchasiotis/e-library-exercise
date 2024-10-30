@@ -1,15 +1,13 @@
 <div class="container">
-  <div
-    *ngFor="let item of cardList"
-    class="item"
-    [ngStyle]="{ backgroundColor: getRandomColor() }"
-  >
+  <div *ngFor="let item of cardList" class="item">
     <div class="image">
       <img [src]="item.imageUri" alt="" />
     </div>
     <div class="cardInfo">
       <p class="title">{{ item.title }}</p>
-      <p class="description">{{ item.description }}</p>
+      <div class="descriptionContainer">
+        <p class="description">{{ item.description }}</p>
+      </div>
       <p class="price">{{ item.price }}</p>
     </div>
   </div>
