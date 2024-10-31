@@ -3,7 +3,7 @@
 .container {
   background: $background-color;
   min-height: 100vh;
-  padding: 70px 0px 0px 0px;
+  padding: 70px 0px 70px 0px;
   color: white; // todo: check about moving this
   font-family: "Poppins", sans-serif; // todo: check about moving this
 }
@@ -18,7 +18,9 @@
 
 h1 {
   font-weight: 500;
+  font-family: "Poppins", sans-serif; // todo: check about moving this
 }
+
 
 .searchBoxWrapper {
   margin-top: 24px;

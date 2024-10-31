@@ -15,12 +15,14 @@
 }
 
 .title {
-  font-weight: 600;
+  font-weight: 500;
   display: -webkit-box;
   -webkit-line-clamp: 1; /* Limit to 1 lines */
   -webkit-box-orient: vertical;
   line-clamp: 1; /* Standard property for compatibility */
   overflow: hidden;
+
+  font-family: "Poppins", sans-serif; // todo: check about moving this
 }
 
 .image {
@@ -46,12 +48,26 @@
   overflow: hidden;
   text-overflow: ellipsis;
   color: $secondary-text-color;
+  font-size: 10px;
 }
 
 .descriptionContainer {
   height: 2rem;
+  padding-right: 28px;
 }
 
 .priceContainer {
-  padding-top: 16px;
+  padding-top: 1rem;
+  display: flex;
+  align-items: baseline;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.pricePostFix {
+  color: $secondary-text-color;
+  font-size: 10px;
 }
