@@ -1,11 +1,5 @@
 @import "../../theme/common.scss";
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
-  gap: 20px 10px;
-}
-
 .item {
   border-radius: 6%;
   width: 100%;
@@ -21,7 +15,6 @@
   -webkit-box-orient: vertical;
   line-clamp: 1; /* Standard property for compatibility */
   overflow: hidden;
-
   font-family: "Poppins", sans-serif; // todo: check about moving this
 }
 
@@ -36,9 +29,9 @@
   width: 100%;
 }
 
-.cardInfo {
-  padding: 10px 12px 10px 12px;
-  background-color: $secondary-background-color;
+.card_info {
+  padding: 10px 12px;
+  background-color: $secondary_background_color;
 }
 
 .description {
@@ -47,15 +40,15 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: $secondary-text-color;
+  color: $secondary_text_color;
   font-size: 10px;
 }
 
-.descriptionContainer {
+.description_container {
   padding-right: 28px;
 }
 
-.priceContainer {
+.price_container {
   padding-top: 1rem;
   display: flex;
   align-items: baseline;
@@ -67,12 +60,12 @@
   font-size: 16px;
 }
 
-.pricePostFix {
-  color: $secondary-text-color;
+.price_postfix {
+  color: $secondary_text_color;
   font-size: 10px;
 }
 
-.arrowButton {
+.arrow_button {
   background: #0c1015;
   height: 32px;
   width: 32px;
@@ -80,7 +73,7 @@
   bottom: 0px;
   right: 0px;
   border-radius: 16%;
-  border-color: $secondary-text-color;
+  border-color: $secondary_text_color;
   border-style: solid;
   border-width: 1px;
 }

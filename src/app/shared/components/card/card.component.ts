@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { cardList } from './card.mock';
+import { Component, Input } from '@angular/core';
+import { cardList, Hotel } from './card.mock';
 
 @Component({
   selector: 'app-card',
@@ -7,7 +7,7 @@ import { cardList } from './card.mock';
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent {
-  cardList = cardList;
+  @Input({ required: true }) item!: Hotel;
 
   // JavaScript to generate a random color and update the CSS variable
   getRandomColor() {

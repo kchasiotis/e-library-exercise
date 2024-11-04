@@ -1,20 +1,18 @@
-<div class="container">
-  <div *ngFor="let item of cardList" class="item">
-    <div class="image">
-      <img [src]="item.imageUri" alt="" />
+<div class="item">
+  <div class="image">
+    <img [src]="item.imageUri" alt="" />
+  </div>
+  <div class="card_info">
+    <p class="title">{{ item.title }}</p>
+    <div class="description_container">
+      <p class="description">{{ item.description }}</p>
     </div>
-    <div class="cardInfo">
-      <p class="title">{{ item.title }}</p>
-      <div class="descriptionContainer">
-        <p class="description">{{ item.description }}</p>
-      </div>
-      <div class="priceContainer">
-        <p class="price">${{ item.price }}</p>
-        <p class="pricePostFix">/night</p>
-        <div class="arrowButton">
-          <div class="center">
-            <app-icon [iconName]="'right_arrow'"></app-icon>
-          </div>
+    <div class="price_container">
+      <p class="price">${{ item.price }}</p>
+      <p class="price_postfix">/night</p>
+      <div class="arrow_button">
+        <div class="center">
+          <app-icon [iconName]="'right_arrow'"></app-icon>
         </div>
       </div>
     </div>

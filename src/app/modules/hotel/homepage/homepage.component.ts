@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { cardList } from 'src/app/shared/components/card/card.mock';
 
 @Component({
   selector: 'app-homepage',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./homepage.component.scss'],
 })
 export class HomepageComponent {
+  cardList = cardList;
   categories: string[] = [
     'Luxe',
     'Countryside',

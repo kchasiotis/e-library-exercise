@@ -1,4 +1,12 @@
-export const cardList = [
+export interface Hotel {
+  imageUri: string;
+  title: string;
+  description: string;
+  price: number;
+  stars: string; // or number, if you prefer using a numeric type for ratings
+}
+
+export const cardList: Hotel[] = [
   {
     imageUri: 'assets/hotel1.jpg',
     title: 'Urban Luxe',
