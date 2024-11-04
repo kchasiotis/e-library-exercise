@@ -6,5 +6,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./icon.component.scss'],
 })
 export class IconComponent {
-  @Input({ required: true }) iconName!: 'search' | 'date' | 'add_person';
+  @Input({ required: true }) iconName!:
+    | 'search'
+    | 'date'
+    | 'add_person'
+    | 'right_arrow';
 }

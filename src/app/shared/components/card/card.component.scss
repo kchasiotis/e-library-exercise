@@ -52,7 +52,6 @@
 }
 
 .descriptionContainer {
-  height: 2rem;
   padding-right: 28px;
 }
 
@@ -60,6 +59,7 @@
   padding-top: 1rem;
   display: flex;
   align-items: baseline;
+  position: relative;
 }
 
 .price {
@@ -70,4 +70,25 @@
 .pricePostFix {
   color: $secondary-text-color;
   font-size: 10px;
+}
+
+.arrowButton {
+  background: #0c1015;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 16%;
+  border-color: $secondary-text-color;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  height: 100%;
 }
