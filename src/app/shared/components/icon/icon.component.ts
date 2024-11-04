@@ -10,5 +10,6 @@ export class IconComponent {
     | 'search'
     | 'date'
     | 'add_person'
-    | 'right_arrow';
+    | 'right_arrow'
+    | 'star';
 }

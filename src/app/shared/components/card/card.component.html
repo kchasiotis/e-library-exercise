@@ -3,6 +3,12 @@
     <img [src]="item.imageUri" alt="" />
   </div>
   <div class="card_info">
+    <div class="stars center">
+      <app-icon iconName="star"></app-icon>
+      <div class="stars_text">
+        <p>{{ item.stars }}</p>
+      </div>
+    </div>
     <p class="title">{{ item.title }}</p>
     <div class="description_container">
       <p class="description">{{ item.description }}</p>
@@ -11,7 +17,7 @@
       <p class="price">${{ item.price }}</p>
       <p class="price_postfix">/night</p>
       <div class="arrow_button">
-        <div class="center">
+        <div class="center full_height">
           <app-icon [iconName]="'right_arrow'"></app-icon>
         </div>
       </div>

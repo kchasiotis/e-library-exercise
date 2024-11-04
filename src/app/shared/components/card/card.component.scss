@@ -30,8 +30,25 @@
 }
 
 .card_info {
-  padding: 10px 12px;
+  padding: 10px 9px 10px 12px;
   background-color: $secondary_background_color;
+  position: relative;
+}
+
+.stars {
+  position: absolute;
+  top: -13px;
+  right: 9px;
+  height: 20px;
+  width: 46px;
+  background: $background-color;
+  @extend .borders;
+  border-radius: 16px !important;
+}
+
+.stars_text {
+  padding-left: 2px;
+  font-size: 10px;
 }
 
 .description {
@@ -72,6 +89,10 @@
   position: absolute;
   bottom: 0px;
   right: 0px;
+  @extend .borders;
+}
+
+.borders {
   border-radius: 16%;
   border-color: $secondary_text_color;
   border-style: solid;
@@ -83,5 +104,8 @@
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+}
+
+.full_height {
   height: 100%;
 }
