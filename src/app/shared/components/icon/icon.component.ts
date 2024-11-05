@@ -11,5 +11,9 @@ export class IconComponent {
     | 'date'
     | 'add_person'
     | 'right_arrow'
-    | 'star';
+    | 'star'
+    | 'person'
+    | 'heart'
+    | 'message'
+    | 'home';
 }

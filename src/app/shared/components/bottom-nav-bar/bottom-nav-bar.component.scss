@@ -1,0 +1,42 @@
+@import "../../theme/common.scss";
+
+.container {
+  height: 80px;
+  background: rgba(12, 16, 21, 0.9);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100vw;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-color: $secondary-text-color;
+  border-width: 1px;
+  border-style: solid;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.text_active {
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.text {
+  font-size: 10px;
+  color: rgba(256, 256, 256, 0.5);
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.width {
+  width: 50px;
+}

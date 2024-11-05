@@ -5,6 +5,7 @@ import { IconInputComponent } from './components/icon-input/icon-input.component
 import { IconComponent } from './components/icon/icon.component';
 import { MultiFilterComponent } from './components/multi-filter/multi-filter.component';
 import { TextCarouselComponent } from './components/text-carousel/text-carousel.component';
+import { BottomNavBarComponent } from './components/bottom-nav-bar/bottom-nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -13,8 +14,14 @@ import { TextCarouselComponent } from './components/text-carousel/text-carousel.
     IconInputComponent,
     IconComponent,
     TextCarouselComponent,
+    BottomNavBarComponent,
   ],
   imports: [CommonModule],
-  exports: [MultiFilterComponent, CardComponent, TextCarouselComponent],
+  exports: [
+    MultiFilterComponent,
+    CardComponent,
+    TextCarouselComponent,
+    BottomNavBarComponent,
+  ],
 })
 export class SharedModule {}
