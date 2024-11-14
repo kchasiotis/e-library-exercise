@@ -1,24 +1,18 @@
-<div class="container">
-  <div class="horizontal_padding">
+<app-homepage-layout>
+  <div topContainer>
     <h1>Find the best getaways for you</h1>
+    <div style="height: 24px"></div>
+    <app-multi-filter></app-multi-filter>
   </div>
-  <div class="horizontal_padding">
-    <div class="search_box_wrapper">
-      <app-multi-filter></app-multi-filter>
-    </div>
-  </div>
-  <div class="carousel_padding">
+  <div carousel>
     <app-text-carousel
       [textArray]="categories"
       (textClicked)="textClickedHandler($event)"
     ></app-text-carousel>
   </div>
-  <div class="horizontal_padding">
-    <div class="card_list_container">
-      <div *ngFor="let item of cardList">
-        <app-card [item]="item"></app-card>
-      </div>
+  <div cards class="card_list_container">
+    <div *ngFor="let item of cardList">
+      <app-card [item]="item"></app-card>
     </div>
   </div>
-</div>
-<app-bottom-nav-bar></app-bottom-nav-bar>
+</app-homepage-layout>

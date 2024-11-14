@@ -1,32 +1,5 @@
-@import "../../../shared/theme/common.scss";
-
 .card_list_container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
   gap: 20px 10px;
-}
-
-.container {
-  background: $background_color;
-  min-height: 100vh;
-  padding: 70px 0px;
-  color: white; // todo: check about moving this
-  font-family: "Poppins", sans-serif; // todo: check about moving this
-}
-
-.horizontal_padding {
-  padding: 0px 30px;
-}
-
-.carousel_padding {
-  padding: 24px 0px 20px 30px;
-}
-
-h1 {
-  font-weight: 500;
-  font-family: "Poppins", sans-serif; // todo: check about moving this
-}
-
-.search_box_wrapper {
-  margin-top: 24px;
 }

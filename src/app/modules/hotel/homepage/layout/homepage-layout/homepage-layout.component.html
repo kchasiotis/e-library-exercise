@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="horizontal_padding">
+    <ng-content select="[topContainer]"></ng-content>
+  </div>
+  <div class="carousel_padding">
+    <ng-content select="[carousel]"> </ng-content>
+  </div>
+  <div class="horizontal_padding">
+    <ng-content select="[cards]"></ng-content>
+  </div>
+</div>
+<app-bottom-nav-bar></app-bottom-nav-bar>
